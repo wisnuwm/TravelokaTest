@@ -8,5 +8,9 @@ We have preinstalled all the required environment for running the tests. You can
 ```bash
 mvn test
 ```
+#### To generate result test
+```bash
+mvn verify -DskipTests
+```
 
 ### Thanks
