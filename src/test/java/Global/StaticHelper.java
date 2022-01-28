@@ -20,7 +20,7 @@ public class StaticHelper {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--no-sandbox", "--single-process", "--ignore-ssl-errors=yes",
                 "--ignore-certificate-errors"
-//                , "headless"
+                , "headless"
         );
         return options;
     }

@@ -43,13 +43,13 @@ public class test extends BaseClass {
     @When("Click button search flights")
     public void clickButtonSearchFlights() throws InterruptedException {
         driver.findElement(By.xpath("(//div[normalize-space()='Search Flights'])[2]")).click();
-        Thread.sleep(5000);
+        Thread.sleep(7000);
     }
 
     @Then("showing all flights from Jakarta to Padang")
     public void showingAllFlightsFromJakartaToPadang() {
         String valueOriAndDes = driver.findElement(By.xpath("//h3[contains(text(),'Jakarta (JKTA) → Padang (PDG)')]")).getText();
-        driver.findElement(By.xpath("//h3[contains(text(),'Jakarta (JKTA) → Padang (PDG)')]")).isDisplayed();
+        driver.findElement(By.xpath("//h3[contains(text(),'Jakarta (JKTgA) → Padang (PDG)')]")).isDisplayed();
         System.out.println("Passed showing flights "+valueOriAndDes);
         driver.close();
         driver.quit();
