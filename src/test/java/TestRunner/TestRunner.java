@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/Features",
-                 glue= {"StepDef"},
+                 glue= {"StepDef","Global"},
                  plugin ={"pretty","json:target/cucumber.json"})
 public class TestRunner {
 }

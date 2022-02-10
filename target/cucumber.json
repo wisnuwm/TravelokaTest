@@ -1,0 +1,215 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-10T13:23:10.000Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7582528000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Global.HookDriver.initialBrowsers()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Traveloka assessment",
+        "description": "",
+        "id": "assessment;traveloka-assessment",
+        "after": [
+          {
+            "result": {
+              "duration": 422465000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Global.HookDriver.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2940831000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Open URL \"https://www.traveloka.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.traveloka.com/\"",
+                  "offset": 9
+                }
+              ],
+              "location": "StepDef.Assessment.openURL(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 467084000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Click on Navigation Menu Transports",
+            "match": {
+              "location": "StepDef.Assessment.clickOnNavigationMenuTransports()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3532117000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Click on Flights",
+            "match": {
+              "location": "StepDef.Assessment.clickOnFlights()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31284000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "On Flight Search Form, click on Round Trip checkbox",
+            "match": {
+              "location": "StepDef.Assessment.onFlightSearchFormClickOnRoundTripCheckbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3228089000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on Search button",
+            "match": {
+              "location": "StepDef.Assessment.clickOnSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5558000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Wait until the page is fully loaded",
+            "match": {
+              "location": "StepDef.Assessment.waitUntilThePageIsFullyLoaded()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5484578000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on Change Search button",
+            "match": {
+              "location": "StepDef.Assessment.clickOnChangeSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3500563000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Change From text field to \"LBJ\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LBJ\"",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDef.Assessment.changeFromTextFieldTo(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3347012000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Change To text field to \"LHR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LHR\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDef.Assessment.changeToTextFieldTo(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1573047000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click on Search button",
+            "match": {
+              "location": "StepDef.Assessment.clickOnSearchButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4247000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Wait until the page is fully loaded",
+            "match": {
+              "location": "StepDef.Assessment.waitUntilThePageIsFullyLoaded()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.Exception: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//h2[text()\u003d\u0027No flights available\u0027]\"}\n  (Session info: chrome\u003d98.0.4758.80)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027192.168.1.8\u0027, ip: \u0027fe80:0:0:0:10f6:81ed:b94c:7230%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u002715.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /var/folders/8n/d8zmly652rb...}, goog:chromeOptions: {debuggerAddress: localhost:49724}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ac261886eb59be5743f0e0e78f5ceec5\n*** Element info: {Using\u003dxpath, value\u003d//h2[text()\u003d\u0027No flights available\u0027]}\n\tat StepDef.Assessment.verifyThatErrorStateIsDisplayed(Assessment.java:78)\n\tat ✽.Verify that Error state: \"No Flight Available\" is displayed(file:///Users/mac/Documents/TEST/TravelokaTest/src/test/resources/Features/Assessment.feature:14)\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//h2[text()\u003d\u0027No flights available\u0027]\"}\n  (Session info: chrome\u003d98.0.4758.80)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027192.168.1.8\u0027, ip: \u0027fe80:0:0:0:10f6:81ed:b94c:7230%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u002715.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /var/folders/8n/d8zmly652rb...}, goog:chromeOptions: {debuggerAddress: localhost:49724}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ac261886eb59be5743f0e0e78f5ceec5\n*** Element info: {Using\u003dxpath, value\u003d//h2[text()\u003d\u0027No flights available\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat POM.PageObject.checkFlightsNotAvailable(PageObject.java:91)\n\tat StepDef.Assessment.verifyThatErrorStateIsDisplayed(Assessment.java:72)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\n",
+              "duration": 1067147000,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "Verify that Error state: \"No Flight Available\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"No Flight Available\"",
+                  "offset": 25
+                }
+              ],
+              "location": "StepDef.Assessment.verifyThatErrorStateIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Assessment",
+    "description": "",
+    "id": "assessment",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Assessment.feature",
+    "tags": []
+  }
+]
